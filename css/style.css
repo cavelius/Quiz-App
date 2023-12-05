@@ -1,7 +1,136 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+:root {
+  --primary-color: blue;
+  --secondary-color: yellowgreen;
+  --text-question: 1rem;
+  --text-answer: 0.7rem;
+  --text-small: 0.6rem;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  line-height: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
 }
 
 h1 {
-  color: red;
+  font-weight: 400;
+  font-size: var(--text-question);
+  margin: 0 60px 0 60px;
+}
+
+/* ____main______ */
+
+main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card {
+  border: solid black 1px;
+  margin: 10% 10%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.card__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  margin: 20px 15px 20px 15px;
+  text-align: center;
+  font-size: var(--text-question);
+}
+
+button {
+  background-color: white;
+  border: solid black 1px;
+  margin: 5px 0 0px 0;
+  padding: 5px 10px 5px 10px;
+  font-size: var(--text-answer);
+  /* border-radius: 50px; */
+}
+
+.answer {
+  /* transform: translateY(-100%); */
+  font-size: var(--text-answer);
+  /* margin-top: 5px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 0.9rem;
+  text-align: center;
+  /* visibility: hidden; */
+}
+
+.bookmark {
+  width: 40px;
+  position: absolute;
+  top: -7px;
+  right: 5px;
+}
+
+.categories {
+  margin: 10px;
+  list-style: none;
+  justify-content: flex-start;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+
+li {
+  background-color: yellowgreen;
+  border-radius: 10px;
+  font-size: var(--text-small);
+  padding: 2% 3%;
+}
+
+footer {
+  background-color: blue;
+  width: 100vw;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.home,
+.bookmark_t,
+.profile {
+  height: 35px;
+}
+
+button:hover {
+  background-color: blue;
 }
