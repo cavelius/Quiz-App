@@ -14,7 +14,7 @@ body {
 header {
   width: 100vw;
   height: 10vh;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +96,32 @@ header {
 
 li {
   background-color: yellowgreen;
+  /* border-radius: 7px; */
   font-size: 10pt;
-  padding: 1% 2%;
+  padding: 2% 3%;
+}
+
+footer {
+  background-color: blue;
+  width: 100vw;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.home,
+.bookmark_t,
+.profile {
+  height: 55px;
 }
