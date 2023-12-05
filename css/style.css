@@ -2,6 +2,35 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   color: red;
+}
+
+/* ____main______ */
+
+.question_card {
+  border: solid black 1px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  /* text-align: center; */
+}
+
+.answer {
+  /* text-align: center; */
+}
+
+.answerbox {
+  /* display: flex;
+  justify-content: center; */
 }
