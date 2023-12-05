@@ -1,10 +1,22 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  /* margin: 0 10%; */
+  /* background-color: gray; */
+}
+
 header {
+  width: 100vw;
+  height: 10vh;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: blue;
 }
 
 h1 {
@@ -14,15 +26,18 @@ h1 {
 /* ____main______ */
 
 .question_card {
+  margin: 5% 10%;
   border: solid black 1px;
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .question {
+  /* margin-bottom: 10%; */
   /* text-align: center; */
 }
 
@@ -33,4 +48,18 @@ h1 {
 .answerbox {
   /* display: flex;
   justify-content: center; */
+}
+
+.bookmark {
+  width: 8vw;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+
+.button {
+  background-color: white;
+  border: solid black 1px;
+  margin: 30% 0;
+  padding: 10px;
 }
