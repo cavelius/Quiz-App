@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: "Space Mono", monospace;
 }
 
 body {
@@ -17,23 +19,33 @@ header {
   justify-content: center;
   align-items: center;
   background-color: blue;
+  line-height: 15px;
 }
 
-h1 {
-  color: red;
+.head {
+  text-align: center;
+  padding-top: 10px;
+  /* font-family: "PT Sans", sans-serif;s */
 }
 
 /* ____main______ */
 
 .question_card {
-  margin: 5% 10%;
   border: solid black 1px;
+  margin: 5% 10%;
   height: 250px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: start; */
+  position: relative;
+}
+
+.card-center {
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .question {
@@ -43,6 +55,7 @@ h1 {
 
 .answer {
   transform: translateY(-50%);
+  visibility: hidden;
 }
 
 .answerbox {
@@ -77,10 +90,12 @@ h1 {
   display: flex;
   gap: 10px;
   position: absolute;
-  left: 10px;
+  left: 0px;
+  bottom: 0;
 }
 
 li {
   background-color: yellowgreen;
-  padding: 5%;
+  font-size: 10pt;
+  padding: 1% 2%;
 }

@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Quiz App Sofia</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Space+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Quiz App</h1>
+      <p class="head">HTML & CSS <br> Quiz</p>
+      <!-- <h1>Quiz</h1> -->
     </header>
     <!-- _________________ -->
     <main>
       <article class="question_card">
-        <p class="question">I am a question</p>
-        <img
-          class="bookmark"
-          src="css/img/bookmark_transparent.png"
-          alt="bookmark"
-        />
-        <div class="answerbox">
-          <button class="button">show answer</button>
-        </div>
-        <p class="answer">I am a answer</p>
+          <div class="card-center">
+            <p class="question">What does CSS stand for?</p>
+            <div class="answerbox">
+              <button class="button">show answer</button>
+            </div>
+            <p class="answer">Cascading Style Sheets</p>
+          </div>
+          <img
+            class="bookmark"
+            src="css/img/bookmark_transparent.png"
+            alt="bookmark"
+          />
         <div class="categories">
           <ul class="cat">
             <li>#html</li>
@@ -33,6 +40,8 @@
           </ul>
         </div>
       </article>
+
+      
     </main>
     <!-- _________________ -->
     <footer></footer>
