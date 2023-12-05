@@ -20,6 +20,9 @@ header {
   align-items: center;
   background-color: blue;
   line-height: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
 }
 
 .head {
@@ -29,6 +32,11 @@ header {
 }
 
 /* ____main______ */
+
+main {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
 
 .question_card {
   border: solid black 1px;
@@ -49,6 +57,8 @@ header {
 }
 
 .question {
+  text-align: center;
+  font-size: 10pt;
   /* margin-bottom: 10%; */
   /* text-align: center; */
 }
@@ -123,5 +133,21 @@ footer {
 .home,
 .bookmark_t,
 .profile {
-  height: 55px;
+  height: 40px;
 }
+
+button:hover {
+  background-color: blue;
+}
+
+/* input[type="checkbox"] {
+  content: ;
+  appearance: none;
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+input[type="checkbox"]:checked {
+  content: url("http://placekitten.com/170/180");
+} */
