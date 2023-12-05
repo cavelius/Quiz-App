@@ -17,7 +17,7 @@ header {
   width: 100vw;
   height: 10vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: var(--primary-color);
   line-height: 15px;
@@ -26,14 +26,10 @@ header {
   z-index: 3;
 }
 
-span {
-  font-style: italic;
-}
-
 h1 {
   font-weight: 400;
   font-size: var(--text-question);
-  margin: 0 80px 0 80px;
+  margin: 0 60px 0 60px;
 }
 
 /* ____main______ */
@@ -69,8 +65,9 @@ button {
   background-color: white;
   border: solid black 1px;
   margin: 5px 0 0px 0;
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
   font-size: var(--text-answer);
+  /* border-radius: 50px; */
 }
 
 .answer {
