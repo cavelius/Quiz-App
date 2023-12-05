@@ -8,16 +8,16 @@
 :root {
   --primary-color: blue;
   --secondary-color: yellowgreen;
-  --text-question: 1rem;
+  --text-question: 0.9rem;
   --text-answer: 0.7rem;
   --text-small: 0.6rem;
 }
 
 header {
   width: 100vw;
-  height: 10vh;
+  height: 70px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--primary-color);
   line-height: 15px;
@@ -29,7 +29,7 @@ header {
 h1 {
   font-weight: 400;
   font-size: var(--text-question);
-  margin: 0 60px 0 60px;
+  margin: 0 30px;
 }
 
 /* ____main______ */
@@ -41,7 +41,7 @@ main {
 
 .card {
   border: solid black 1px;
-  margin: 10% 10%;
+  margin: 10% 7%;
   height: 250px;
   display: flex;
   flex-direction: column;
