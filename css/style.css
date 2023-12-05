@@ -28,7 +28,7 @@ h1 {
 .question_card {
   margin: 5% 10%;
   border: solid black 1px;
-  height: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +42,7 @@ h1 {
 }
 
 .answer {
-  /* text-align: center; */
+  transform: translateY(-50%);
 }
 
 .answerbox {
@@ -62,4 +62,25 @@ h1 {
   border: solid black 1px;
   margin: 30% 0;
   padding: 10px;
+}
+
+/* .categories {
+  background-color: blueviolet;
+  display: flex;
+  position: relative;
+} */
+
+.cat {
+  margin: 10px;
+  list-style: none;
+  justify-content: flex-start;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  left: 10px;
+}
+
+li {
+  background-color: yellowgreen;
+  padding: 5%;
 }
