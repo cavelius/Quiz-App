@@ -1,0 +1,12 @@
+header {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  line-height: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
