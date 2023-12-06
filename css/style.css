@@ -1,5 +1,7 @@
 @import "button.css";
 @import "card.css";
+@import "header.css";
+@import "navigation.css";
 
 * {
   margin: 0;
@@ -9,33 +11,22 @@
 }
 
 :root {
+  --violet-color: rgb(177, 132, 255);
+  --orange-color: rgb(255, 123, 0);
+  --lightgreen-color: rgb(201, 255, 40);
   --primary-color: blue;
-  --secondary-color: yellowgreen;
   --text-question: 0.9rem;
   --text-answer: 0.7rem;
   --text-small: 0.6rem;
 }
+
 body {
   background-color: rgb(243, 243, 243);
 }
 
-header {
-  width: 100vw;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: blue;
-  /* background-color: var(--primary-color); */
-  line-height: 15px;
-  position: fixed;
-  top: 0;
-  z-index: 3;
-}
-
 h1 {
   font-weight: 400;
-  font-size: 15px;
+  font-size: var(--text-question);
   margin: 0 30px;
   /* color: rgb(201, 255, 40); */
 }
@@ -59,14 +50,12 @@ main {
 }
 
 .answer {
-  /* transform: translateY(-100%); */
   font-size: var(--text-answer);
-  /* margin-top: 5px; */
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 0.9rem;
   text-align: center;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 .bookmark {
@@ -88,21 +77,20 @@ main {
 }
 
 li {
-  background-color: yellowgreen;
   border-radius: 10px;
   font-size: var(--text-small);
   padding: 2% 3%;
 }
 .categories__html {
-  background-color: rgb(177, 132, 255);
+  background-color: var(--violet-color);
 }
 
 .categories__flexbox {
-  background-color: rgb(255, 123, 0);
+  background-color: var(--orange-color);
 }
 
 .categories__css {
-  background-color: rgb(201, 255, 40);
+  background-color: var(--lightgreen-color);
 }
 
 footer {
@@ -114,22 +102,4 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.navbar {
-  height: 5vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 100px;
-}
-
-.home,
-.bookmark_t,
-.profile {
-  height: 35px;
-}
-
-button:hover {
-  background-color: blue;
 }
