@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: blue;
+  background-color: var(--primary-color);
   line-height: 15px;
   position: fixed;
   top: 0;

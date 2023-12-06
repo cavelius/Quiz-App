@@ -94,7 +94,7 @@ li {
 }
 
 footer {
-  background-color: blue;
+  background-color: var(--primary-color);
   width: 100vw;
   height: 60px;
   position: fixed;

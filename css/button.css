@@ -7,5 +7,5 @@ button {
 }
 
 button:hover {
-  background-color: blue;
+  background-color: var(--primary-color);
 }
