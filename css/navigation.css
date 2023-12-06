@@ -2,12 +2,16 @@
   height: 5vh;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   gap: 100px;
 }
 
 .home,
 .bookmark_t,
 .profile {
-  height: 35px;
+  height: 40px;
+}
+
+a {
+  margin: 0 5px;
 }
