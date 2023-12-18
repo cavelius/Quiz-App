@@ -13,20 +13,40 @@
       rel="stylesheet"
     />
     <!-- js file -->
-    <script src="./js/index.js" defer></script>
+    <!-- <script src="./js/index.js" defer></script> -->
+    <script src="./js/form.js" defer></script>
   </head>
   <body>
     <header>
       <h1 class="quiz">
         Qu <br />
         iz
-        <h1>Profile</h1>
+        <h1>add new card</h1>
       </h1>
       <!-- <h1>Quiz</h1> -->
     </header>
     <!-- _________________ -->
-    <main>
-      <h1>Your profile</h1>
+    <main js-data="main">
+      <form class="card__main" js-data="form">
+        <label for="yourquestion">Your question: </label>
+        <textarea
+          id="yourquestion"
+          name="yourquestion"
+          rows="6"
+          cols="44"
+        ></textarea>
+
+        <label for="youranswer">Your answer: </label>
+        <textarea
+          id="youranswer"
+          name="youranswer"
+          rows="6"
+          cols="44"
+        ></textarea>
+        <label for="tag">Tag</label>
+        <input type="text" name="tag" id="tag" rows="6" cols="44" />
+        <button type="submit" js-data="submitbtn">Submit</button>
+      </form>
     </main>
     <!-- _________________ -->
     <footer>
@@ -41,10 +61,10 @@
             alt="Bookmark"
         /></a>
         <a href="form.html"
-          ><img src="css/img/add.png" class="profile" alt="profile"
+          ><img src="css/img/add_filled.png" class="profile" alt="profile"
         /></a>
         <a href="profile.html"
-          ><img src="css/img/profile_filled.png" class="profile" alt="profile"
+          ><img src="css/img/profile.png" class="profile" alt="profile"
         /></a>
       </nav>
     </footer>

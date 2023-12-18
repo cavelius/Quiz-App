@@ -23,7 +23,7 @@ bookmarkcontainer.addEventListener("click", () => {
   questionCardBookmarked = !questionCardBookmarked;
 });
 
-// answerbtn
+// answer button
 
 let answerIsHide = false;
 

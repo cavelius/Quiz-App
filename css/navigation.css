@@ -2,8 +2,8 @@
   height: 5vh;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  gap: 100px;
+  align-items: center;
+  gap: 35px;
 }
 
 .home,
