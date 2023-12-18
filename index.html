@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- js file -->
+    <script src="./js/index.js" defer></script> 
   </head>
   <body>
     <header>
@@ -31,7 +33,9 @@
           <button>show answer</button>
           <p class="answer">Cascading Style Sheets</p>
         </section>
-        <img class="bookmark" src="css/img/bookmark.png" alt="bookmark" />
+        <div class="bookmark-container" data-js="bookmark-container">
+          <img class="bookmark" data-js="bookmark" src="css/img/bookmark.png" alt="bookmark" />
+        </div>
         <ul class="categories">
           <li class="categories__html">#html</li>
           <li class="categories__flexbox">#flexbox</li>
