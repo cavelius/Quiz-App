@@ -6,6 +6,14 @@ button {
   font-size: var(--text-answer);
 }
 
-button:hover {
+/* button:hover {
   background-color: var(--primary-color);
+} */
+
+.submitbtn {
+  margin-top: 20px;
+}
+
+button:active {
+  transform: scale(0.9);
 }

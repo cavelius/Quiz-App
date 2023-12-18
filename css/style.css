@@ -55,7 +55,16 @@ main {
   margin-bottom: 20px;
   line-height: 0.9rem;
   text-align: center;
-  /* visibility: hidden; */
+  visibility: hidden;
+}
+
+.answerVisible {
+  font-size: var(--text-answer);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 0.9rem;
+  text-align: center;
+  visibility: visible;
 }
 
 .bookmark {
@@ -103,4 +112,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#tag {
+  width: 427px;
+}
+
+.leftcaracters {
+  font-size: 10px;
+  text-align: right;
+}
+
+.headline {
+  text-align: right;
 }
