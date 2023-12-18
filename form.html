@@ -31,21 +31,35 @@
         <label for="yourquestion">Your question: </label>
         <textarea
           id="yourquestion"
+          js-data="yourquestion"
           name="yourquestion"
           rows="6"
           cols="44"
+          maxlength="150"
+          placeholder="Enter your personal message"
         ></textarea>
+        <p class="card__main">
+          <span js-data="remaining-characters">150</span> characters left
 
-        <label for="youranswer">Your answer: </label>
-        <textarea
-          id="youranswer"
-          name="youranswer"
-          rows="6"
-          cols="44"
-        ></textarea>
-        <label for="tag">Tag</label>
-        <input type="text" name="tag" id="tag" rows="6" cols="44" />
-        <button type="submit" js-data="submitbtn">Submit</button>
+          <label for="youranswer">Your answer: </label>
+          <textarea
+            id="youranswer"
+            js-data="youranswer"
+            name="youranswer"
+            rows="6"
+            cols="44"
+            maxlength="150"
+            placeholder="Enter your personal message"
+          ></textarea>
+        </p>
+
+        <p class="card__main">
+          <span js-data="remaining-charactersanswer">150</span> characters left
+
+          <label for="tag">Tag</label>
+          <input type="text" name="tag" id="tag" rows="6" cols="44" />
+          <button type="submit" js-data="submitbtn">Submit</button>
+        </p>
       </form>
     </main>
     <!-- _________________ -->

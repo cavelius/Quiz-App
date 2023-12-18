@@ -2,8 +2,15 @@ console.log("test on the form.js");
 
 const formfield = document.querySelector('[js-data="form"]');
 const submit = document.querySelector('[js-data="submitbtn"]');
-
 const main = document.querySelector('[js-data="main"]');
+const MAX_CHARACTERS = 150;
+const characterLeftElement = document.querySelector(
+  '[js-data="remaining-characters"]'
+);
+
+const characterLeftElementanswer = document.querySelector(
+  '[js-data="remaining-charactersanswer"]'
+);
 
 formfield.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -72,4 +79,20 @@ formfield.addEventListener("submit", (e) => {
     }
     questionCardBookmarked = !questionCardBookmarked;
   });
+});
+
+const messageInput = document.querySelector('[js-data="yourquestion"]');
+messageInput.addEventListener("input", (e) => {
+  console.log("Press");
+  console.log("What I type: ", e.target.value.length);
+  characterLeftElement.textContent =
+    MAX_CHARACTERS - parseInt(e.target.value.length);
+});
+
+const messageInputanswer = document.querySelector('[js-data="youranswer"]');
+messageInputanswer.addEventListener("input", (e) => {
+  console.log("Press");
+  console.log("What I type: ", e.target.value.length);
+  characterLeftElementanswer.textContent =
+    MAX_CHARACTERS - parseInt(e.target.value.length);
 });
