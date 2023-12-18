@@ -1,18 +1,21 @@
 console.log("test");
 
-const bookmark = document.querySelector('[data-js="bookmark"]');
-console.log(bookmark);
-
-const bookmarkContainer = document.querySelector(
+const bookmarkcontainer = document.querySelector(
   '[data-js="bookmark-container"]'
 );
-console.log(bookmarkContainer);
+const bookmarkPicture = document.querySelector('[data-js="bookmarkPicture"]');
 
-bookmark.addEventListener("click", () => {
-  console.log("is clicked");
+console.log(bookmarkPicture);
+console.log(bookmarkcontainer);
 
-  const filledBookmark = document.createElement("div");
-  filledBookmark.classList.add(".bookmark");
-  filledBookmark.innerHTML = `<img class="bookmark" data-js="bookmark" src="css/img/bookmark_filled.png"alt="bookmark-filled"/>`;
-  bookmarkContainer.appendChild(filledBookmark);
+let questionCardBookmarked = false;
+
+bookmarkcontainer.addEventListener("click", () => {
+  console.log("clicked");
+  if (questionCardBookmarked) {
+    bookmarkPicture.src = "css/img/bookmark.png";
+  } else {
+    bookmarkPicture.src = "css/img/bookmark_filled.png";
+  }
+  questionCardBookmarked = !questionCardBookmarked;
 });
