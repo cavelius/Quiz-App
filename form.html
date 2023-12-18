@@ -33,32 +33,36 @@
           id="yourquestion"
           js-data="yourquestion"
           name="yourquestion"
-          rows="6"
-          cols="44"
+          rows="3"
+          cols="50"
           maxlength="150"
-          placeholder="Enter your personal message"
         ></textarea>
-        <p class="card__main">
-          <span js-data="remaining-characters">150</span> characters left
+        <p class="leftcaracters">
+          <span class="leftcaracters" js-data="remaining-characters">150</span>
+          characters left
 
-          <label for="youranswer">Your answer: </label>
+          <label class="card__main" for="youranswer">Your answer: </label>
           <textarea
             id="youranswer"
             js-data="youranswer"
             name="youranswer"
-            rows="6"
-            cols="44"
+            rows="3"
+            cols="50"
             maxlength="150"
-            placeholder="Enter your personal message"
           ></textarea>
         </p>
 
-        <p class="card__main">
-          <span js-data="remaining-charactersanswer">150</span> characters left
+        <p class="leftcaracters">
+          <span js-data="remaining-charactersanswer">150</span>
+          characters left
 
-          <label for="tag">Tag</label>
-          <input type="text" name="tag" id="tag" rows="6" cols="44" />
-          <button type="submit" js-data="submitbtn">Submit</button>
+          <label class="card__main" for="tag">Tag</label>
+          <input type="text" name="tag" id="tag"/>
+          <div class="submitbtn">
+            <button class="button" type="submit" js-data="submitbtn">
+              Submit
+            </button>
+        </div>
         </p>
       </form>
     </main>

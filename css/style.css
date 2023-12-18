@@ -115,5 +115,14 @@ footer {
 }
 
 #tag {
-  width: 377px;
+  width: 427px;
+}
+
+.leftcaracters {
+  font-size: 10px;
+  text-align: right;
+}
+
+.headline {
+  text-align: right;
 }

@@ -91,8 +91,6 @@ messageInput.addEventListener("input", (e) => {
 
 const messageInputanswer = document.querySelector('[js-data="youranswer"]');
 messageInputanswer.addEventListener("input", (e) => {
-  console.log("Press");
-  console.log("What I type: ", e.target.value.length);
   characterLeftElementanswer.textContent =
     MAX_CHARACTERS - parseInt(e.target.value.length);
 });
