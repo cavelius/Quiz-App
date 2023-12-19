@@ -7,27 +7,27 @@ const MAX_CHARACTERS = 150;
 const characterLeftElement = document.querySelector(
   '[js-data="remaining-characters"]'
 );
-
 const characterLeftElementanswer = document.querySelector(
   '[js-data="remaining-charactersanswer"]'
 );
 
+//formfield event listener
 formfield.addEventListener("submit", (e) => {
   e.preventDefault();
   const formElements = e.target.elements;
 
   const formData = new FormData(e.target);
-  const data = Object.fromEntries(formData);
-  console.log("Data:", data);
-  const tag = data.tag;
-  console.log("Tag:", tag);
-  const arrayTag = data.tag.split(" ");
-  console.log(arrayTag[0]);
+  const data = Object.fromEntries(formData); //input as Object
+  const tag = data.tag; // input as a string
+  const arrayTag = data.tag.split(" "); // input transform to a array
+
+  console.log("Data (input als Objekt):", data);
+  console.log("Tag(Tag input als string):", tag);
+  console.log("tag input als array", arrayTag); // first item in the array
 
   console.log(formElements.yourquestion);
   console.log("Inhalt Frage:", formElements.yourquestion.value);
   console.log("Inhalt Antwort:", formElements.youranswer.value);
-  console.log("Tag inhalt", formElements.tag);
 
   const card = document.createElement("div");
   card.classList.add(".card");
@@ -48,7 +48,7 @@ formfield.addEventListener("submit", (e) => {
             </article>`;
   main.appendChild(card);
 
-  // add event listener to btn
+  // btn event listener
   const btn = document.querySelector('[data-js="btn"]');
   const answer = document.querySelector('[data-js="answer"]');
   let answerIsHide = false;
@@ -66,6 +66,7 @@ formfield.addEventListener("submit", (e) => {
     answerIsHide = !answerIsHide;
   });
 
+  // bookamrk event listener
   const bookmarkcontainer = document.querySelector(
     '[data-js="bookmark-container"]'
   );
@@ -83,6 +84,7 @@ formfield.addEventListener("submit", (e) => {
   });
 });
 
+// counter inputfield event
 const messageInput = document.querySelector('[js-data="yourquestion"]');
 messageInput.addEventListener("input", (e) => {
   console.log("Press");
