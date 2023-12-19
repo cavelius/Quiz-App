@@ -43,10 +43,12 @@ formfield.addEventListener("submit", (e) => {
         <ul class="categories">
             <li class="categories__html">#${arrayTag[0]}</li>
             <li class="categories__flexbox">#${arrayTag[1]}</li>
-            <li class="categories__css">#${arrayTag[2]}</li>
+            <li class="categories__css">#${arrayTag[2]}</li>-
             </ul>
             </article>`;
   main.appendChild(card);
+
+  e.target.reset();
 
   // btn event listener
   const btn = document.querySelector('[data-js="btn"]');
