@@ -48,7 +48,7 @@ formfield.addEventListener("submit", (e) => {
             </article>`;
   main.appendChild(card);
 
-  e.target.reset();
+  e.target.reset(); // reset the card
 
   // btn event listener
   const btn = document.querySelector('[data-js="btn"]');
