@@ -18,10 +18,10 @@ formfield.addEventListener("submit", (e) => {
 
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData);
+  console.log("Data:", data);
   const tag = data.tag;
-  const tagWithoutComma = tag.replaceAll(",", " ");
-  console.log(tagWithoutComma);
-  const arrayTag = tagWithoutComma.split();
+  console.log("Tag:", tag);
+  const arrayTag = data.tag.split(" ");
   console.log(arrayTag[0]);
 
   console.log(formElements.yourquestion);
